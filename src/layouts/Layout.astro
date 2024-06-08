@@ -1,0 +1,37 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<title>Manuel Samaniego - Desarrollador Web Junior</title>
+		<meta name="description" content="Manuel Samaniego, desarrollador web junior con un año de experiencia en el desarrollo de aplicaciones web con Angular, NodeJs, JavaScript, TypeScript, Css, ExpressJs, Mysql y PostgreSQL.">
+		<meta name="og:title" content="Manuel Samaniego - Desarrollador Web Junior">
+		<meta name="og:description" content="Manuel Samaniego, desarrollador web junior con un año de experiencia en el desarrollo de aplicaciones web con Angular, NodeJs, JavaScript, TypeScript, Css, ExpressJs, Mysql y PostgreSQL.">
+		<meta name="keywords" content="Desarrollador Web, Angular, NodeJs, CSS, Javascript, Typescript, Desarrollador Junior">
+		<meta name="robots" content="index, follow">
+		<link rel="canonical" href="https://manuelsamaniego.com.mx/">
+		<base href="/">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!-- Google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;600&family=Sometype+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inconsolata:wght@400;600&family=Kanit:wght@400;500;600&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-zinc-900">
+		<slot />
+	</body>
+</html>
+<style is:global>
+
+</style>
