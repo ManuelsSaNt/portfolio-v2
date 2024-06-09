@@ -1,10 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import NavBar from '../components/shared/NavBar.astro';
 ---
 
 <Layout title="Welcome to Astro.">
+	<NavBar />
 	<main>
-		<h1 class="text-4xl">asd</h1>
+
+		<section class="height-control">
+
+		</section>
+
 	</main>
 </Layout>
+
+
+<style>
+	.height-control {
+		height: calc(100vh - 69px);
+	}
+</style>
